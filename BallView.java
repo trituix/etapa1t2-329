@@ -3,11 +3,11 @@ import java.awt.geom.*;
 
 public class BallView {
    private Color color = Color.BLUE;
-   private Ellipse2D.Double shape = null;
+   private Ellipse2D.Double shape = new Ellipse2D.Double();
    private Ball ball;
    
    public BallView (Ball b){
-      // to be coded
+      this.ball = b;
    }
    public boolean contains (double x, double y){
       return true;
